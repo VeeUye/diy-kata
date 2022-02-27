@@ -12,7 +12,6 @@ const humanCatDogYears = (number) => {
     dogYears = (number - 2) * 5 + 24;
   }
 
-  console.log(number, catYears, dogYears);
   return [number, catYears, dogYears];
 };
 

@@ -1,5 +1,11 @@
 const { getEmployerRole } = require("../src");
+const { employees } = require("./data");
 
 describe("getEmployerRole", () => {
-  test("returns the employee's role in the company", () => {});
+  it("returns the employee's role in the company", () => {
+    expect(getEmployerRole("Javid", employees)).toEqual(
+      "Human Recommended Reading Assistant"
+    );
+    expect(getEmployerRole("Jenny", employees)).toEqual("Sales Associate");
+  });
 });

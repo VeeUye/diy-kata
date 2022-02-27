@@ -1,5 +1,5 @@
 const { joinNames } = require("../src");
-const { simpsons, rocinante } = require("./joinNamesData");
+const { simpsons, rocinante } = require("./data");
 
 describe("joinNames", () => {
   test("returns string of names, seperated by commas and an ampersand", () => {
